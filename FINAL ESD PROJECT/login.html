@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="login.css">
+        <title>LOGIN</title>
+        <h1><marquee>!!---------WELCOME TO CARDEKHO.COM---------!!</marquee></h1><hr>
+    </head>
+<body>
+      <div class="navbar">
+          <a href="file:///C:/Users/Lenovo/Desktop/FINAL%20ESD%20PROJECT/htmlcode.html#home">HOME</a>
+          <a href="file:///C:/Users/Lenovo/Desktop/FINAL%20ESD%20PROJECT/about.html">ABOUT</a>
+          <a href="file:///C:/Users/Lenovo/Desktop/FINAL%20ESD%20PROJECT/contact.html">CONTACT</a>
+          <a href="jobs.html">JOBS</a>
+          <a href="https://www.autonews.com/">NEWS</a>
+          <a href="https://mail.google.com/" style="float: right;">cardekho@gmail.com</a>
+          <a href="login.html">LOGIN/REGISTER</a>
+      </div>
+      <h2>Want to be a Member?? Please register!</h2>
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form">
+                  <input type="text" placeholder="user name"/>
+                  <input type="password" placeholder="password"/>
+                  <input type="password" placeholder="confirm password"/>
+                  <input type="email" placeholder="email address"/>
+                  <input type="submit" value="REGISTER"/>
+                  <input type="reset" value="RESET"/>
+                  <p class="message">ALREADY REGISTERED??<br><a href="#">LOGIN</a></p>
+                </form>
+                <form class="login-form">
+                    <input type="text" placeholder="user name"/>
+                  <input type="password" placeholder="password"/>
+                  <input type="submit" value="LOGIN"/>
+                  <p class="message">NOT REGISTERED??<br><a href="#">REGISTER</a></p>
+                </form>
+                <hr>
+            </div>
+        </div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js">
+</script>
+<script>
+    $('.message a').click(function(){
+        $('form').animate({height:"toggle",opacity:"toggle"},"slow")
+    })
+</script>
+    </body>
+</html>

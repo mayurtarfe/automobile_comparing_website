@@ -1,0 +1,105 @@
+<html>
+  <title>
+      CARDEKHO.COM
+  </title>
+  <head>
+      <link rel="stylesheet" href="stylesheet.css">
+      <h1><marquee>!!---------WELCOME TO CARDEKHO.COM---------!!</marquee></h1><hr>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="htmlcode.html">HOME</a>
+        <a href="file:///C:/Users/Lenovo/Desktop/FINAL%20ESD%20PROJECT/about.html">ABOUT</a>
+        <a href="file:///C:/Users/Lenovo/Desktop/FINAL%20ESD%20PROJECT/contact.html">CONTACT</a>
+        <a href="jobs.html">JOBS</a>
+
+        <a href="https://www.autonews.com/">NEWS</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFTZBnGgqSQVJLzqTMbSjVMBLWzfVZHQtRXpgXZfnpDmFXmDQthpsSrZfmngVwhdwFLZg" style="float: right;">cardekho@gmail.com</a>
+        <a href="login.html">LOGIN/REGISTER</a>
+      </div>
+      <div style="text-align: center;">
+        <h2>Please select the car models you wish to compare.....</h2>
+      </div>
+      <hr>
+      <form>
+<table align="center" >
+
+    <tr style="float: left">
+        <td>
+            BRAND1:
+        </td>
+        <td>
+        <select id="brand1">
+            <option value="-1" >MARUTI SUZUKI</option>
+            <option value="1" >HONDA</option>
+        </select>
+        </td>
+    </tr>
+    <tr style="float: right;">
+        <td>
+            MODEL1:
+        </td>
+        <td>
+        <select  id="model1">
+            <option value="-1" >SWIFT</option>
+            <option value="1" >CITY ZX</option>
+        </select>
+        </td>
+    </tr>
+</table>
+    <table align="center">
+        <tr style="float: left">
+            <td>
+                BRAND2:
+            </td>
+            <td>
+            <select id="brand2">
+                <option value="-1" >TOYOTA</option>
+                <option value="1" >TATA</option>
+            </select>
+            </td>
+        </tr>
+        <tr style="float: right;">
+            <td>
+                MODEL2:
+            </td>
+            <td>
+            <select  id="model2">
+                <option value="-1" >YARRIS</option>
+                <option value="1" >NEXON</option>
+            </select>
+            </td>
+        </tr>
+</table>
+<div style="text-align:center">
+    
+    <button onclick="submitpage()">SUBMIT</button>
+</div> 
+<div style="text-align:center">  
+    <input type="reset" onclick="alert('CLEARED')" value="CLEAR ALL">  
+</div>
+</form>
+</div>
+<hr>
+<footer>
+    <p style="text-align: center;font-family:sans-serif;color: white; font-size: large;" ><a href="https://drive.google.com/file/d/15NViaBCX1LIl45dbgPwKmZOhUBUOjZTr/view?usp=sharing">REPORT</p>
+</footer>
+<script>
+    function submitpage(){
+        if(document.getElementById("brand1").value == '-1' &&
+        document.getElementById("model1").value == '-1' && document.getElementById("brand2").value == '-1'
+        && document.getElementById("model2").value == '-1') {window.open("swiftyarris.html");}
+
+        else if(document.getElementById("brand1").value == '1' &&
+        document.getElementById("model1").value == '1' && document.getElementById("brand2").value == '-1'
+        && document.getElementById("model2").value == '-1') {window.open("cityyarris.html");}
+
+        else if(document.getElementById("brand1").value == '-1' &&
+        document.getElementById("model1").value == '-1' && document.getElementById("brand2").value == '1'
+        && document.getElementById("model2").value == '1') {window.open("tatanexMarutiswift.html");}
+        
+    else{window.open('citynexon.html')}
+    }
+</script>
+  </body>
+</html>
